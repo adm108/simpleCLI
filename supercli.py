@@ -16,7 +16,7 @@ def supercli(zipname, data, value):
         print("Wrong file name.")
         return
     except zipfile.BadZipFile:
-        print("The file is corrupted")
+        print("The file is corrupted.")
         return
     
     tmpfd, tmpname = tempfile.mkstemp(dir=os.path.dirname(zipname))
